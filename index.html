@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="css.css">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik&display=swap" rel="stylesheet">
+
+
+
+     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Nunito&display=swap" rel="stylesheet">
+     <title>Calculator</title>
+</head>
+
+<body>
+     <div class="container d-flex justify-content-center align-items-center vh-100">
+          <div class="calculator">
+               <h1 class="text-center mb-4" style="color: black;">Independent Calculator</h1>
+
+
+
+               <div class="display">
+                    <input type="text" name="display" readonly>
+               </div>
+               <div class="buttons">
+                    <button class="button clear" onclick="clearDisplay()">C</button>
+                    <button class="button" onclick="clearAll()">AC</button>
+
+
+                    <button class="button" onclick="appendToDisplay('√')">√</button>
+
+
+
+
+
+
+                    <button class="button" onclick="appendToDisplay('/')">/</button>
+
+                    <button class="button" onclick="appendToDisplay('00')">00</button>
+
+                    <button class="button" onclick="appendToDisplay('0')">0</button>
+                    <button class="button" onclick="appendToDisplay('.')">.</button>
+
+
+                    <button class="button" onclick="appendToDisplay('+')">+</button>
+
+                    <button class="button" onclick="appendToDisplay('-')">-</button>
+
+                    <button class="button" onclick="appendToDisplay('x')">x</button>
+
+                    <button class="button" onclick="appendToDisplay('9')">9</button>
+                    <button class="button" onclick="appendToDisplay('8')">8</button>
+                    <button class="button" onclick="appendToDisplay('7')">7</button>
+                    <button class="button" onclick="appendToDisplay('6')">6</button>
+                    <button class="button" onclick="appendToDisplay('5')">5</button>
+                    <button class="button" onclick="appendToDisplay('4')">4</button>
+                    <button class="button" onclick="appendToDisplay('3')">3</button>
+                    <button class="button" onclick="appendToDisplay('2')">2</button>
+                    <button class="button" onclick="appendToDisplay('1')">1</button>
+
+
+
+
+
+                    <button class="button" onclick="calculate()">=</button>
+               </div>
+          </div>
+     </div>
+
+     <script src="js.js"></script>
+</body>
+
+</html>

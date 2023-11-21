@@ -1,0 +1,81 @@
+body {
+     color: white;
+
+     font-family: 'Playfair Display', serif;
+     font-family: 'Rubik', sans-serif;
+
+     background-color: #000;
+     /* Black background */
+     margin: 0;
+     padding: 0;
+
+
+}
+
+.calculator {
+     background-color: #7b7b7b;
+     /* Silver background */
+     padding: 20px;
+     /* Padding for some gap from top and bottom */
+     border-radius: 8px;
+     /* Adjusted border-radius for a smaller size */
+     text-align: center;
+     margin: 10px;
+     /* Added margin for centering, with space on top and bottom */
+     width: 40%;
+     /* Set a fixed width for the calculator box */
+}
+
+
+
+.display {
+     display: flex;
+     justify-content: flex-end;
+     margin: 20px 0;
+     border: 3px solid black;
+     border-radius: 5px;
+}
+
+
+
+.display input {
+     text-align: right;
+     flex: 1;
+     font-size: 25px;
+     box-shadow: none;
+     border: none;
+     background: transparent;
+     outline: none;
+}
+
+.buttons {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 10px;
+}
+
+button {
+     width: 100%;
+     padding: 15px;
+     font-size: 12px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     background-color: #f0f0f0;
+     cursor: pointer;
+}
+
+button:active {
+     background-color: #ddd;
+}
+
+.operators {
+     grid-column: 1;
+}
+
+.numbers {
+     grid-column: 2;
+}
+
+.clear {
+     grid-column: 3;
+}
